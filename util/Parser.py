@@ -7,5 +7,5 @@ class Parser:
 
     def initilaize_arg_parser(self):
         parser = argparse.ArgumentParser()
-        parser.add_argument("-f", "--function", help="run statistical function process", choices=['iqr'])
+        parser.add_argument("-f", "--function", help="run statistical function process", choices=['iqr', 'sd'])
         return parser.parse_args()
